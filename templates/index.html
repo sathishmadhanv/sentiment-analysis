@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block bodyblock %} 
+    <div class="container">
+      <h1>Sentiment Analysis</h1>
+      <p>This app used to find sentiment of the sentence.This app is build with Machine Learning  NaiveBayes Algorithm.When User enters the sentence  stemming,tokenization,classification and stop word filtering will be done and then it will go to ml model where sentiment of the text id predicted </p>
+      <img src="{{url_for('static',filename='images/s2.jpg')}}" alt="" width="950" height="400" >
+      <br>
+    </div>
+        
+{%endblock bodyblock %} 

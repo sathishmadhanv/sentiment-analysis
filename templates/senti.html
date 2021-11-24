@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %} 
+    <div class="container">
+      <h1>Sentiment Analysis</h1>
+      <br>
+      <br>
+      <div >
+        <form action="" method="POST" enctype="multipart/form-data">
+          <label for="upload">Enter the text to predict</label>
+          <input type="text" id="custom_tweet" name="custom_tweet" required="true">
+          <br>
+          <br>
+          <input type="submit" value="predict">
+          <br>
+          <br>
+          <br>
+      {% if Upload %}
+        <div class="row">
+          <div class="col-md-6"> 
+           <p >{{cus}}</p>
+          </div>
+        </div>
+      {% endif %}
+      </div>
+    </div>
+        
+{%endblock bodyblock %} 
